@@ -1,0 +1,12 @@
+[user]
+	name = Kara-Ali Aliev
+	email = alien-box@yandex.ru
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+[push]
+	default = simple
+[alias]
+	unstage = reset HEAD --
+	last = log -1 HEAD
