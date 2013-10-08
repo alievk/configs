@@ -1,4 +1,5 @@
-# variables
+# run urxvt daemon
+urxvtd -q -o -f
 
 # set keyboard parameters
 setxkbmap -layout "us,ru"
@@ -18,12 +19,6 @@ xcape &
 
 # automaticaly disable touchpad
 ./scripts/touchoff &
-
-# set status bar
-#while xsetroot -name "`date` `uptime | sed 's/.*,//'`"
-#do
-	#sleep 1
-#done &
 
 # start dwm
 exec ck-launch-session dbus-launch --sh-syntax --exit-with-session i3 
