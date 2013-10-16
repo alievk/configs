@@ -46,18 +46,24 @@ map! ;; ;<Esc>o
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 
-imap <left> <nop>
-imap <right> <nop>
-imap <up> <nop>
-imap <down> <nop>
-nmap <left> <nop>
-nmap <right> <nop>
-nmap <up> <nop>
-nmap <down> <nop>
-map <left> <nop>
-map <right> <nop>
-map <up> <nop>
-map <down> <nop>
+
+"nnoremap h j
+"nnoremap t k
+"nnoremap d h
+"nnoremap n l
+
+"imap <left> <nop>
+"imap <right> <nop>
+"imap <up> <nop>
+"imap <down> <nop>
+"nmap <left> <nop>
+"nmap <right> <nop>
+"nmap <up> <nop>
+"nmap <down> <nop>
+"map <left> <nop>
+"map <right> <nop>
+"map <up> <nop>
+"map <down> <nop>
 
 " ==============================================================================
 " "Vundle" Package manager {{{1
