@@ -1,0 +1,86 @@
+! -------------------- !
+! --- Xft settings --- !
+! -------------------- !
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+Xft.lcdfilter:  lcddefault
+
+! ----------------------- !
+! --- Common settings --- !
+! ----------------------- !
+*.font:             xft:PragmataPro
+*.boldFont:         xft:PragmataPro:style=Bold
+*.boldItalicFont:   xft:PragmataPro:style=Bold Italic
+*.italicFont:       xft:PragmataPro:style=Italic
+
+! ---------------------- !
+! --- Xterm settings --- !
+! ---------------------- !
+
+! --- colour scheme --- !
+XTerm.VT100.background:         Black
+XTerm.VT100.color0:             Black
+XTerm.VT100.color1:             Red
+XTerm.VT100.color2:             Green
+XTerm.VT100.color3:             Yellow
+XTerm.VT100.color4:             CornflowerBlue
+XTerm.VT100.color5:             Magenta
+XTerm.VT100.color6:             Cyan
+XTerm.VT100.color7:             White
+XTerm.VT100.colorBD:            White
+XTerm.VT100.colorBDMode:        true
+XTerm.VT100.colorUL:            Yellow
+XTerm.VT100.colorULMode:        true
+XTerm.VT100.cursorColor:        Red
+XTerm.VT100.foreground:         White
+
+! ---------------------- !
+!     urxvt settings     !
+! ---------------------- !
+
+urxvt*depth:            32
+urxvt*internalBorder:   3
+
+! --- colour scheme --- !
+! normal colours
+urxvt*color1:    #C00000
+urxvt*color2:    #00C000
+urxvt*color3:    #C0C000
+urxvt*color4:    #0C00C0
+urxvt*color5:    #AA00AA
+urxvt*color6:    #00AAAA
+urxvt*color7:    #FFFFFF
+
+! high-intensity colours
+urxvt*color8:    #212121
+urxvt*color9:    #FF8080
+urxvt*color10:   #80FF80
+urxvt*color11:   #FFFF88
+urxvt*color12:   #99CCFF
+urxvt*color13:   #B14CC2
+urxvt*color14:   #9BFFFF
+urxvt*color15:   #D0D0D0
+
+! background & foreground
+urxvt*background: #212121
+urxvt*foreground: #C0C0C0
+
+! --- font --- !
+urxvt*letterSpace: -1
+
+! --- scroll bar --- !
+urxvt*scrollBar: false
+urxvt*saveLines:  1000
+
+! --- cursor --- !
+urxvt*cursorBlink:          true
+urxvt*cursorUnderline:      false
+
+! --- pointer --- !
+urxvt*pointerBlank:         true
+
+! --- man specific configs --- !
+urxvt*colorBD:  Cyan
