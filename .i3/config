@@ -89,10 +89,10 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+7 workspace 1
-bindsym $mod+5 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+1 workspace 4
+bindsym $mod+7 workspace cmd
+bindsym $mod+5 workspace im
+bindsym $mod+3 workspace web
+bindsym $mod+1 workspace xra
 bindsym $mod+9 workspace 5
 bindsym $mod+0 workspace 6
 bindsym $mod+2 workspace 7
@@ -101,10 +101,10 @@ bindsym $mod+6 workspace 9
 bindsym $mod+8 workspace 10
 
 # move focused container to workspace
-bindsym $mod+Shift+7 move container to workspace 1
-bindsym $mod+Shift+5 move container to workspace 2
-bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+1 move container to workspace 4
+bindsym $mod+Shift+7 move container to workspace cmd
+bindsym $mod+Shift+5 move container to workspace im
+bindsym $mod+Shift+3 move container to workspace web
+bindsym $mod+Shift+1 move container to workspace xra
 bindsym $mod+Shift+9 move container to workspace 5
 bindsym $mod+Shift+0 move container to workspace 6
 bindsym $mod+Shift+2 move container to workspace 7
@@ -151,3 +151,24 @@ bar {
         status_command i3status
         font xft: PragmataPro 14px
 }
+
+# Enable floating modes for the following applications
+for_window [class="^Gimp$"] floating enable
+
+# Custom window settings
+for_window [class="^Firefox$"] border none
+
+# Assign applications to specific workspaces
+assign [class="^URxvt$"] cmd
+assign [class="^Firefox$"] web
+assign [class="^Thunderbird$" ] im
+assign [class="^SkypeTab$"] im
+
+# Set deault workspace layout
+workspace_layout stacking
+
+# Automatically start applications with i3
+exec urxvtc
+#exec firefox
+#exec thunderbird
+#exec skypetab-ng

@@ -3,7 +3,7 @@ urxvtd -q -o -f
 
 # set keyboard parameters
 setxkbmap -layout "us,ru,us"
-setxkbmap -variant "dvp,,"
+setxkbmap -variant "dvp,dvp,"
 setxkbmap -option "grp_led:caps"
 
 # start keyboard switcher (see ~/.config/loloswitcher/config.ini)

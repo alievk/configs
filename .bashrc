@@ -27,14 +27,27 @@ alias gbr='git branch'
 alias glg='git log --date-order --all --graph --format="%C(green)%h%Creset %C(yellow)%an%Creset %C(blue bold)%ar%Creset %C(red bold)%d%Creset%s"'
 alias glg2='git log --date-order --all --graph --name-status --format="%C(green)%H%Creset %C(yellow)%an%Creset %C(blue bold)%ar%Creset %C(red bold)%d%Creset%s"'
 
+# shell cammands
+# make directory and immediatelly change to it
+function mkdircd() {
+    mkdir -p "$@" && eval cd "\"\$$#\"";
+}
+
+# cd simplifications
+alias cd..='cd ..'
+alias cd...='cd ../..'
+alias cd....='cd ../../..'
+
 # network commands
 alias ntw='wicd-curses'
 
 # refresh shell
 alias reload='source ~/.bashrc'
 
+# put text from the clipboard to bpaste service and write the url to the secondary clipboard (C-v)
+alias wpaste='wgetpaste -x -C'
+
 # ssh commands simplified
-alias relbrus='ssh alievali@elbrus'
 
 SSH_ENV=$HOME/.ssh/environment
    

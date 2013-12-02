@@ -67,36 +67,28 @@
 
 # VOLUME 
 "~/scripts/pavol.sh minus"
-	control+mod4 + F11
+	mod4 + F11
 
 "~/scripts/pavol.sh plus"
-	control+mod4 + F12
+	mod4 + F12
 
 "~/scripts/pavol.sh mute"
-	control+mod4 + F10
+	mod4 + F10
 
 # EDITORS
-"emacs"
-	control+mod4 + e
+"qtcreator"
+    mod4 + q
 
 # INTERNET 
 "/home/ali/scripts/ponmephi"
-	control+mod4 + c		
+	mod4 + c		
 
 "/home/ali/scripts/poffmephi"
-	control+mod4 + d
+	mod4 + d
 
 "firefox"
-	control+mod4 + f
+	mod4 + f
 
-"~/scripts/ponmephi; firefox www.vk.com"
-	control+mod4 + v
-
-"skypetab_ng"
-	control+mod4 + s
-
-"pidgin"
-	control+mod4 + i
 ##################################
 # End of xbindkeys configuration #
 ##################################
