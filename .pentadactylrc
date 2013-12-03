@@ -1,0 +1,13 @@
+"hg6975
+
+loadplugins '\.(js|penta)$'
+group user
+map -count -modes=b <C-@> -builtin <C-^>
+map -count -modes=b <C-ъ> -builtin <C-^>
+map -modes=n,v З -ex :forward
+map -modes=n,v О -ex :back
+map -modes=n,v <A-t> -ex :set showtabline!=always,never
+set guioptions=bCs
+set showtabline=never
+
+" vim: set ft=pentadactyl:
